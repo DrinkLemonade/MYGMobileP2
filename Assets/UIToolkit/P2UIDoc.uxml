@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Steampunk.uss?fileID=7433441132597879392&amp;guid=7003016abae61744892c8a36c36a8cd7&amp;type=3#Steampunk" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Gentleland/SteampunkUI/Art/BackGround.png?fileID=21300000&amp;guid=b464ee8350ce3984aa31ea54d12d9236&amp;type=3#BackGround&quot;); background-color: rgb(3, 93, 255); -unity-background-image-tint-color: rgb(0, 117, 255);" />
+    <ui:VisualElement name="Wood" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Gentleland/SteampunkUI/Art/BackGround.png?fileID=2800000&amp;guid=b464ee8350ce3984aa31ea54d12d9236&amp;type=3#BackGround&quot;); margin-top: 10px; margin-right: 10px; margin-bottom: 50px; margin-left: 10px; height: 2029px; width: 941px; position: absolute; top: 76px; left: 57px;">
+        <ui:VisualElement name="EmailField" style="flex-grow: 1;" />
+        <ui:VisualElement name="Frame" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_3.png?fileID=113947384412704010&amp;guid=c3cbd015370c5294385a8d880c234850&amp;type=3#Steampunk_UI_Frames_3_4&quot;); -unity-slice-scale: 4px; position: absolute; height: 2310px; width: 1049px; top: -64px; left: -54px; align-self: flex-start;">
+            <ui:VisualElement name="CornerDecTL" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_3.png?fileID=-595620182695351188&amp;guid=c3cbd015370c5294385a8d880c234850&amp;type=3#Steampunk_UI_Frames_3_5&quot;); position: absolute; left: 0; top: 6px; height: 385px; width: 519px;" />
+            <ui:VisualElement name="CornerDecTL" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_3.png?fileID=-595620182695351188&amp;guid=c3cbd015370c5294385a8d880c234850&amp;type=3#Steampunk_UI_Frames_3_5&quot;); position: absolute; left: 0; top: 6px; height: 385px; width: 519px;" />
+        </ui:VisualElement>
+        <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" style="height: 80px; width: 922px;" />
+    </ui:VisualElement>
+</ui:UXML>
