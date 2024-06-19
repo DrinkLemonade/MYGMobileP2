@@ -9,3 +9,21 @@
     -unity-font-definition: initial;
     color: rgb(255, 166, 0);
 }
+
+#EmailField {
+}
+
+.unity-base-field__input {
+    background-color: rgba(72, 56, 56, 0);
+}
+
+.StyleFieldTest {
+    align-self: center;
+    position: absolute;
+    height: 70px;
+    top: 125px;
+    left: -241px;
+    width: 718px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
