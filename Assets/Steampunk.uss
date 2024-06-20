@@ -8,6 +8,7 @@
     -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/RobotoSlab/RobotoSlab.ttf?fileID=12800000&guid=130d0ab50b4e89f46bffbc016fdcea68&type=3#RobotoSlab");
     -unity-font-definition: initial;
     color: rgb(255, 166, 0);
+    text-shadow: -25px 25px 0 rgb(0, 0, 0);
 }
 
 #EmailField {
@@ -15,6 +16,11 @@
 
 .unity-base-field__input {
     background-color: rgba(72, 56, 56, 0);
+    color: rgb(255, 255, 255);
+    -unity-font-style: italic;
+    max-width: 1000%;
+    max-height: 500%;
+    height: 80px;
 }
 
 .StyleFieldTest {
