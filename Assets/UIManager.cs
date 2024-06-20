@@ -7,33 +7,24 @@ using UnityEngine.UIElements;
 public class UIManager : MonoBehaviour
 {
     VisualElement root;
-    TextField tf;
+    TextField emailField;
     Button button;
 
     [SerializeField]
     GameObject UIDoc;
     public static Action OnButtonClicked;
 
-    private void Awake()
-    {
-    }
     // Start is called before the first frame update
     void Start()
     {
         root = UIDoc.GetComponent<UIDocument>().rootVisualElement;
-        tf = root.Q<TextField>("EmailField");
+        emailField = root.Q<TextField>("EmailField");
         button = root.Q<Button>("Button");
-        button.clicked += OnButtonClickedHandler; //TODO: Don't allow it to stack
+        button.clickable.clicked += OnClick; //TODO: Don't allow it to stack
+        Debug.Log(button.name);
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnClick()
     {
-        
-    }
-
-    void OnButtonClickedHandler()
-    {
-        Debug.Log("button clicked!");
     }
 }
