@@ -8,7 +8,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class UIManager : MonoBehaviour
+public class LoginMenu : MonoBehaviour
 {
     VisualElement root, loginScreen;
     TextField emailField, passwordField;
@@ -26,18 +26,18 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     bool useCurveInsteadOfEase = false;
 
-    [SerializeField]
-    GameObject UIDoc;
     public static Action OnButtonClicked;
 
     [SerializeField]
     string shownIfEmpty = "AAAAAAAAAAAAAH";
 
-    // Start is called before the first frame update
+    [SerializeField]
+    AudioClip onClicked;
+
     void Start()
     {
         //Get
-        root = UIDoc.GetComponent<UIDocument>().rootVisualElement;
+        root = GetComponent<UIDocument>().rootVisualElement;
         loginScreen = root.Q<VisualElement>("Wood");
         emailField = root.Q<TextField>("EmailField");
         passwordField = root.Q<TextField>("PasswordField");
@@ -59,8 +59,17 @@ public class UIManager : MonoBehaviour
 
         //Login button
         button = root.Q<Button>("Button");
-        button.clickable.clicked += OnButtonClick; //TODO: Don't allow it to stack
-        Debug.Log(button.name);
+    }
+
+    private void OnEnable()
+    {
+        root = GetComponent<UIDocument>().rootVisualElement;
+        button = root.Q<Button>("Button");
+        button.clickable.clicked += OnButtonClick;
+    }
+    private void OnDisable()
+    {
+        button.clickable.clicked -= OnButtonClick;
     }
 
     void SetEmptyDefaultText(TextField field, bool active)
@@ -85,6 +94,7 @@ public class UIManager : MonoBehaviour
     void OnButtonClick()
     {
         if (validated) return;
+        AudioManager.i.PlaySound(onClicked);
 
         Debug.Log($"button clicked! Contents are: {emailField.text}, {passwordField.text}");
         bool okMail = false, okPassword = false;
