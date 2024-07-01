@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
+//Code and comments taken from https://docs.unity3d.com/2022.3/Documentation/Manual/UIE-slide-toggle.html
+
 namespace MyUILibrary
 {
     // Derives from BaseField<bool> base class. Represents a container for its input part.

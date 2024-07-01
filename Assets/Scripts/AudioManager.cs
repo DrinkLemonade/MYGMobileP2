@@ -3,6 +3,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 
+//I'm just reusing code from a previous project.
+//I could expand upon this in the future.
+//Right now, only PlaySound is currently in use.
+
 public class AudioManager : MonoBehaviour
 {
     [NonSerialized]
@@ -35,7 +39,6 @@ public class AudioManager : MonoBehaviour
         if (MainMenuMusic == null) Debug.Log("Menu music null");
     }
 
-    // Update is called once per frame
     public void PlaySound(AudioClip sound)
     {
         Debug.Log($"Playing: {sound.name}");

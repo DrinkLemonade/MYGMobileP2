@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//Code and comments from https://docs.unity3d.com/Manual/UIE-HowTo-CreateRuntimeUI.html
 public enum ECharacterClass
 {
     Knight, Ranger, Wizard

@@ -6,6 +6,7 @@ using UnityEngine;
 public class PipelineTest
 {
 
+    //Check that we're using URP and the SRP asset hasn't changed.
     [Test]
     public void DoTest()
     {

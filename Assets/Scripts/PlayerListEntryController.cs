@@ -1,5 +1,7 @@
 using UnityEngine.UIElements;
 
+//Code and comments from https://docs.unity3d.com/Manual/UIE-HowTo-CreateRuntimeUI.html
+
 public class PlayerListEntryController
 {
     Label m_NameLabel;

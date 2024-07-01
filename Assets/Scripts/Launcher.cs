@@ -2,6 +2,8 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
+//Code and comments from https://doc.photonengine.com/pun/current/demos-and-tutorials/pun-basics-tutorial/
+
 namespace Com.MachinalGames.SteampunkGame
 {
     public class Launcher : MonoBehaviourPunCallbacks

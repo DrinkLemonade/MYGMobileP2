@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
+//Code and comments from https://docs.unity3d.com/Manual/UIE-HowTo-CreateRuntimeUI.html
+
 public class MainView : MonoBehaviour
 {
     [SerializeField]
