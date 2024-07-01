@@ -11,6 +11,6 @@ public class PipelineTest
     {
         string name = UnityEngine.Rendering.GraphicsSettings.renderPipelineAsset.GetType().Name;
         Debug.Log($"PIPELINE NAME: {name}");
-        Assert.IsTrue(name == "UniversalRenderPipelineGlobalSettings");
+        Assert.IsTrue(name == "UniversalRenderPipelineAsset");
     }
 }

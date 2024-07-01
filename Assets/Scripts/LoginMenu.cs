@@ -10,7 +10,7 @@ using UnityEngine.UIElements;
 
 public class LoginMenu : MonoBehaviour
 {
-    VisualElement root, loginScreen;
+    VisualElement root, loginWindow;
     TextField emailField, passwordField;
     Button button;
     Label emailWarning, passwordWarning;
@@ -38,7 +38,7 @@ public class LoginMenu : MonoBehaviour
     {
         //Get
         root = GetComponent<UIDocument>().rootVisualElement;
-        loginScreen = root.Q<VisualElement>("Wood");
+        loginWindow = root.Q<VisualElement>("WindowContainer");
         emailField = root.Q<TextField>("EmailField");
         passwordField = root.Q<TextField>("PasswordField");
 
@@ -114,7 +114,7 @@ public class LoginMenu : MonoBehaviour
 
     private void Update()
     {
-        loginScreen.style.top = Length.Percent(10 + validateSlide);
+        loginWindow.style.top = Length.Percent(validateSlide);
     }
 
     public bool EmailIsValid(string emailaddress)

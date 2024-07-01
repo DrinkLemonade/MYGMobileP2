@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &21657614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,7 +373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &386269103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,7 +704,7 @@ MonoBehaviour:
   easeTimeSeconds: 1.5
   useCurveInsteadOfEase: 1
   shownIfEmpty: Enter text...
-  onClicked: {fileID: 8300000, guid: 5fd04c3d65893ce469224f0ace8e58bd, type: 3}
+  onClicked: {fileID: 8300000, guid: 98453260d8b3ae7488a2c9d661f32eb8, type: 3}
 --- !u!1 &2067588712
 GameObject:
   m_ObjectHideFlags: 0
