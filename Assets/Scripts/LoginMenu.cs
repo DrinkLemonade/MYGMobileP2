@@ -47,13 +47,11 @@ public class LoginMenu : MonoBehaviour
         passwordWarning.visible = false;
 
         //Email
-        emailField.RegisterCallback<ChangeEvent<string>, TextField>(OnFieldStringChangedEvent, emailField);
-        emailField.RegisterCallback<ClickEvent, TextField>(OnFieldClickEvent, emailField);
+        emailField.RegisterCallback<PointerDownEvent, TextField>(OnFieldClickEvent, emailField);
         SetEmptyDefaultText(emailField, true);
 
         //Password
-        passwordField.RegisterCallback<ChangeEvent<string>, TextField>(OnFieldStringChangedEvent, passwordField);
-        passwordField.RegisterCallback<ClickEvent, TextField>(OnFieldClickEvent, passwordField);
+        passwordField.RegisterCallback<PointerDownEvent, TextField>(OnFieldClickEvent, passwordField);
         SetEmptyDefaultText(passwordField, true);
 
         //Login button
@@ -81,7 +79,7 @@ public class LoginMenu : MonoBehaviour
         field.SetValueWithoutNotify(active ? shownIfEmpty : "");
     }
 
-    void OnFieldClickEvent(ClickEvent ev, TextField field)
+    void OnFieldClickEvent(PointerDownEvent ev, TextField field)
     {
         //If the default "enter text" string is being displayed, remove it.
         //Also, change the password field to password mode so it displays asterisks.
